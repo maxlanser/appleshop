@@ -1,0 +1,65 @@
+@import "fonts";
+@import "helpers";
+
+
+
+.wrapper {
+	background:#fff url(../img/wrapper-bg-line.gif) top repeat-x;
+	min-height: 100%;
+	box-sizing: border-box;
+	padding-bottom: 250px;
+	@extend .clearfix;
+	color: $mainTextColor;
+	font-family: $mainTextFont; 
+}
+.container {
+	width: 1000px;
+	margin: 0 auto;
+}
+.header {
+
+}
+.header__inner {
+	padding-top: 24px;
+	@extend .clearfix;
+} 
+.logo {
+	float: left;
+	.logo-txt {
+		position: relative;
+		text-indent:-9999px;
+		display:block;
+	}
+}
+.contactinfo {
+	float:right;
+	text-align:right;
+}
+.contactinfo__phone {
+	font-size:25px;
+	width:200px;
+	margin-top:-2px;
+	.contactinfo__phone-subcode {
+		color:#00b9fe;
+		font-size:14px;
+		font-weight:bold;
+		font-family: $mainTextFont;
+		margin:-2px 0 0 0;
+		display: inline;
+	}
+}
+.contactinfo__email {
+	.contactinfo__email-address {
+		color:#613993;
+		font-size:17px;
+		text-decoration:none;
+		&:hover {
+			text-decoration:underline;
+		}
+	}
+}
+.footer {
+	height: 237px;
+	margin-top:-237px;
+	background: url(../img/footer-bg.gif); 
+}

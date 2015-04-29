@@ -1,0 +1,30 @@
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+html, body {
+	height:100%;
+} 
+ul,li {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+p {
+	margin: 0px;
+	padding: 0px;
+}
+h1, h2, h3, h4, h5, h6 {
+	margin: 0px;
+	padding: 0px;
+	font-weight: normal;
+}
+$mainTextColor: #5c7b98;
+
+$mainTextFont : 'elektra_light_pro'; 
