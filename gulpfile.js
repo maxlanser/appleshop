@@ -1,6 +1,6 @@
 var gulp = require("gulp"),
 	connect = require("gulp-connect"),
-	jade = require("gulp-jade"),
+	gulpjade = require("gulp-jade"),
 	sass = require("gulp-sass"),
 	opn = require("opn"),
 	wiredep = require('wiredep').stream;
@@ -33,15 +33,11 @@ gulp.task('html', function () {
 });
 
 gulp.task('jade', function () {
-  gulp.src('./app/layouts.jade/index.jade')
-    .pipe(jade({
+  gulp.src('./app/layouts/index.jade')
+    .pipe(gulpjade({
     	pretty: true
     }))
-    .pipe(wiredep({
-      direcory: "app/bower"
-    }))
-    .pipe(gulp.dest('./app'))
-    .pipe(connect.reload());
+    .pipe(gulp.dest('./app'));
 });
 
 gulp.task('sass', function () {
@@ -52,9 +48,10 @@ gulp.task('sass', function () {
 });
 
 gulp.task('watch', function () {
-  gulp.watch(['./app/layouts.jade/**/*.jade'], ['jade']);
+  gulp.watch(['./app/layouts/**/*.jade'], ['jade']);
   gulp.watch(['./app/scss/*.scss'], ['sass']);
-  gulp.watch(['bower.json'], ['bower'])
+  gulp.watch(['bower.json'], ['bower']);
+  gulp.watch(['./app/*.html'], ['bower']);
 });
  
 
@@ -66,5 +63,6 @@ gulp.task('bower', function () {
     .pipe(wiredep({
       direcory: "app/bower"
     }))
-    .pipe(gulp.dest('./app'));
+    .pipe(gulp.dest('./app'))
+    .pipe(connect.reload());
 });
