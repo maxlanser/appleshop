@@ -60,7 +60,7 @@ h4 {
   font-size: 25px; }
 
 .wrapper {
-  background: #fff url(../img/wrapper-bg-line.gif) top repeat-x;
+  background: #fff url(../img/wrapper-bg-line.gif) repeat-x top;
   min-height: 100%;
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
@@ -70,7 +70,7 @@ h4 {
   font-family: 'elektra_light_pro'; }
 
 .wrapper__inner {
-  background: url(../img/header-bg.png) top center no-repeat; }
+  background: url(../img/header-bg.png) no-repeat top center; }
 
 .container {
   width: 1000px;
@@ -132,7 +132,7 @@ h4 {
       .navigation .navigation__list .navigation__list-item:first-child {
         margin-left: 0px; }
       .navigation .navigation__list .navigation__list-item:first-child.active .navigation__list-item-link:before {
-        background: url(../img/navigation__list-before-ac.png) top left no-repeat; }
+        background: url(../img/navigation__list-before-ac.png) no-repeat top left; }
       .navigation .navigation__list .navigation__list-item:first-child .navigation__list-item-link {
         background: none;
         background-color: #f7f7f7;
@@ -143,57 +143,57 @@ h4 {
           display: block;
           width: 16px;
           height: 42px;
-          background: url(../img/navigation__list-before-bg.png) top left no-repeat;
+          background: url(../img/navigation__list-before-bg.png) no-repeat top left;
           content: " ";
           position: absolute;
           left: -16px;
           top: 0px; }
         .navigation .navigation__list .navigation__list-item:first-child .navigation__list-item-link:hover:before {
-          background: url(../img/navigation__list-before-hv.png) top left no-repeat; }
+          background: url(../img/navigation__list-before-hv.png) no-repeat top left; }
       .navigation .navigation__list .navigation__list-item:last-child.active .navigation__list-item-link:after {
-        background: url(../img/navigation__list-after-ac.png) top left no-repeat; }
+        background: url(../img/navigation__list-after-ac.png) no-repeat top left; }
       .navigation .navigation__list .navigation__list-item:last-child .navigation__list-item-link:after {
         display: block;
         width: 16px;
         height: 42px;
-        background: url(../img/list-after-bg.png) top right no-repeat;
+        background: url(../img/list-after-bg.png) no-repeat top right;
         content: " ";
         position: absolute;
         right: -16px;
         top: 0px; }
       .navigation .navigation__list .navigation__list-item:last-child .navigation__list-item-link:hover:after {
-        background: url(../img/navigation__list-after-hv.png) top right no-repeat; }
+        background: url(../img/navigation__list-after-hv.png) no-repeat top right; }
       .navigation .navigation__list .navigation__list-item.last-child .navigation__list-item-link:after {
         display: block;
         width: 16px;
         height: 42px;
-        background: url(../img/list-after-bg.png) top right no-repeat;
+        background: url(../img/list-after-bg.png) no-repeat top right;
         content: " ";
         position: absolute;
         right: -16px;
         top: 0px; }
       .navigation .navigation__list .navigation__list-item.last-child .navigation__list-item-link:hover:after {
-        background: url(../img/navigation__list-after-hv.png) top right no-repeat; }
+        background: url(../img/navigation__list-after-hv.png) no-repeat top right; }
       .navigation .navigation__list .navigation__list-item.active .navigation__list-item-link {
         color: #fff;
-        background: url(../img/list-item-active-left.png) top left no-repeat; }
+        background: url(../img/list-item-active-left.png) no-repeat top left; }
         .navigation .navigation__list .navigation__list-item.active .navigation__list-item-link .navigation__list-item-link-span {
-          background: url(../img/navigation__list-bg-active.gif) top repeat-x; }
+          background: url(../img/navigation__list-bg-active.gif) repeat-x top; }
       .navigation .navigation__list .navigation__list-item .navigation__list-item-link {
         display: block;
         text-decoration: none;
         color: #5c7b98;
-        background: url(../img/navigation__list-item-sep-3.png) top left no-repeat;
+        background: url(../img/navigation__list-item-sep-3.png) no-repeat top left;
         padding: 0px 0px 0px 25px; }
         .navigation .navigation__list .navigation__list-item .navigation__list-item-link .navigation__list-item-link-span {
           display: block;
           padding: 0px 23px 0px 0px;
           line-height: 42px;
-          background: url(../img/navigation__list-bg.gif) top repeat-x; }
+          background: url(../img/navigation__list-bg.gif) repeat-x top; }
         .navigation .navigation__list .navigation__list-item .navigation__list-item-link:hover {
-          background: url(../img/navigation__list-item-hover-left.png) top left no-repeat; }
+          background: url(../img/navigation__list-item-hover-left.png) no-repeat top left; }
         .navigation .navigation__list .navigation__list-item .navigation__list-item-link:hover .navigation__list-item-link-span {
-          background: url(../img/navigation__list-item-span-hv.gif) top repeat-x; }
+          background: url(../img/navigation__list-item-span-hv.gif) repeat-x top; }
 
 .middle {
   padding: 14px 0; }
@@ -274,7 +274,7 @@ h4 {
       padding: 5px 20px; }
       .menu .menu-list-item .menu-list-child .menu-list-item-link .menu-list-item-link-span {
         padding: 0 0 0 13px;
-        background: url(../img/menu-left-arr.png) left 4px no-repeat; }
+        background: url(../img/menu-left-arr.png) no-repeat left 4px; }
   .menu .menu-list-item.active .menu-list-item-link {
     background: #00b9fe;
     color: #fff; }
@@ -442,7 +442,7 @@ h4 {
   font-weight: bold;
   font-size: 14px;
   text-decoration: none;
-  background: url(../img/cd-top-bg.png) top center no-repeat;
+  background: url(../img/cd-top-bg.png) no-repeat top center;
   visibility: hidden;
   opacity: 0;
   -webkit-transition: opacity .3s 0s, visibility 0s .3s;

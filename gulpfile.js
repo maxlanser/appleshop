@@ -66,7 +66,6 @@ gulp.task('useref', function () {
     return gulp.src('app/*.html')
         .pipe(assets)
         .pipe(gulpif('*.js', uglify()))
-        .pipe(gulpif('*.css', minifyCss()))
         .pipe(assets.restore())
         .pipe(useref())
         .pipe(gulp.dest('dist'));
@@ -74,7 +73,7 @@ gulp.task('useref', function () {
 
 // очищаем папку
 gulp.task('clean', function(){
-  gulp.src('dist')
+  gulp.src('/dist')
     .pipe(clean());
 });
 
@@ -143,7 +142,7 @@ gulp.task('sass', function () {
 
 
 // скрипт сборки в папку dist
-gulp.task('dist',['useref','images','fonts'], function(){
+gulp.task('dist',['images','fonts', 'useref'], function(){
   return gulp.src('dist/**/*').pipe(size({title: 'build'}));
 });
 
