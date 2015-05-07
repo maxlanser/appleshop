@@ -18,14 +18,19 @@ ul,li {
 	list-style: none;
 }
 p {
-	margin: 0px;
+	margin: 0 0 20px 0;
 	padding: 0px;
+	line-height:20px;
 }
 h1, h2, h3, h4, h5, h6 {
 	margin: 0px;
 	padding: 0px;
-	font-weight: normal;
+	font-weight: bold;
+	margin:0 0 6px 0;
+}
+h4 {
+	font-size:25px;
 }
 $mainTextColor: #5c7b98;
-
+$linkTextColor: #00b9fe;
 $mainTextFont : 'elektra_light_pro'; 

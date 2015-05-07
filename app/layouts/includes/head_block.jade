@@ -12,7 +12,14 @@ link(rel="manifest", href="img/manifest.json")
 meta(name="msapplication-TileColor", content="#da532c")
 meta(name="theme-color", content="#ffffff")
 meta(name="viewport", content="width=device-width, initial-scale=1")
-// bower:css
-// endbower
+// build:css css/vendor.css 
+// bower:css 
+// endbower 
+// endbuild 
+// build:css css/style.css 
+link(rel='stylesheet', href='css/jquery.formstyler.css')
 link(rel='stylesheet', href='css/style.css')
+// endbuild 
+// build:js js/modernizr.js
 script(src='js/modernizr.js')
+// endbuild 

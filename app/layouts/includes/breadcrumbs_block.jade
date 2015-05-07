@@ -1,0 +1,24 @@
+div.breadcrumbs
+	ul.breadcrumbs__list
+		li.breadcrumbs__list-item
+			a(href="").breadcrumbs__list-item-link Главная
+		li.breadcrumbs__list-item  &nbsp;>&nbsp;Каталог
+div.view__pagination
+	div.view__pagination-pages
+		ul.view__pagination-pages-list
+			li.view__pagination-pages-list-item.active
+				span 1
+			li.view__pagination-pages-list-item
+				a(href="#").view__pagination-pages-list-item-link 2
+			li.view__pagination-pages-list-item
+				a(href="#").view__pagination-pages-list-item-link 3
+			li.view__pagination-pages-list-item
+				a(href="#").view__pagination-pages-list-item-link 4
+			li.view__pagination-pages-list-item
+				a(href="#").view__pagination-pages-list-item-link 5
+			li.view__pagination-pages-list-item.all
+				a(href="#").view__pagination-pages-list-item-link Все
+	div.view__pagination-toggle
+		select.view__pagination-toggle-select
+			option(selected="selected", value="grid") Сеткой
+			option(value="lines") Линиями

@@ -7,5 +7,13 @@ html(lang="ru-RU")
 			div.wrapper__inner
 				div.container
 					include includes/header_block
+					div.middle
+						include includes/breadcrumbs_block
+					div.main
+						div.main__left
+							include includes/left_block
+						div.main__content
+							include includes/content_block
 		include includes/footer_block
 		include includes/bottomscripts
+		a(href="#").go-top Наверх

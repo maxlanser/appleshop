@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru-RU">
+
   <head>
     <meta charset="UTF-8">
     <meta name="description" content="">
@@ -15,21 +16,30 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- bower:css-->
-    <link rel="stylesheet" href="bower/normalize.css/normalize.css" />
-    <!-- endbower-->
+    <!-- build:css css/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="/bower/normalize.css/normalize.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css css/style.css -->
+    <link rel="stylesheet" href="css/jquery.formstyler.css">
     <link rel="stylesheet" href="css/style.css">
+    <!-- endbuild -->
+    <!-- build:js js/modernizr.js-->
     <script src="js/modernizr.js"></script>
+    <!-- endbuild -->
   </head>
+
   <body>
     <div class="wrapper">
       <div class="wrapper__inner">
         <div class="container">
           <header class="header">
-            <div class="header__inner"><a href="#" class="logo"><img src="img/logo.png" class="logo-img"><span class="logo-txt">Интернет магазин ЭпплShop</span></a>
+            <div class="header__inner">
+              <a href="#" title="Интернет магазин ЭпплShop" class="logo"><img src="img/logo.png" alt="Интернет магазин ЭпплShop" class="logo-img"><span class="logo-txt">Интернет магазин ЭпплShop</span></a>
               <div class="contactinfo">
                 <div class="contactinfo__phone"><sup class="contactinfo__phone-subcode">+7&nbsp;(921)&nbsp;</sup>322&nbsp;12&nbsp;32</div>
-                <div class="contactinfo__email"><a href="mailto:" class="contactinfo__email-address">manager@company.com</a></div>
+                <div class="contactinfo__email"><a href="mailto:" title="напишите нам на E-mail" class="contactinfo__email-address">manager@company.com</a></div>
               </div>
               <nav class="navigation">
                 <ul class="navigation__list">
@@ -44,15 +54,215 @@
               </nav>
             </div>
           </header>
+          <div class="middle">
+            <div class="breadcrumbs">
+              <ul class="breadcrumbs__list">
+                <li class="breadcrumbs__list-item"><a href="" class="breadcrumbs__list-item-link">Главная</a></li>
+                <li class="breadcrumbs__list-item"> &nbsp;>&nbsp;Каталог</li>
+              </ul>
+            </div>
+            <div class="view__pagination">
+              <div class="view__pagination-pages">
+                <ul class="view__pagination-pages-list">
+                  <li class="view__pagination-pages-list-item active"><span>1</span></li>
+                  <li class="view__pagination-pages-list-item"><a href="#" class="view__pagination-pages-list-item-link">2</a></li>
+                  <li class="view__pagination-pages-list-item"><a href="#" class="view__pagination-pages-list-item-link">3</a></li>
+                  <li class="view__pagination-pages-list-item"><a href="#" class="view__pagination-pages-list-item-link">4</a></li>
+                  <li class="view__pagination-pages-list-item"><a href="#" class="view__pagination-pages-list-item-link">5</a></li>
+                  <li class="view__pagination-pages-list-item all"><a href="#" class="view__pagination-pages-list-item-link">Все</a></li>
+                </ul>
+              </div>
+              <div class="view__pagination-toggle">
+                <select class="view__pagination-toggle-select">
+                  <option selected="selected" value="grid">Сеткой</option>
+                  <option value="lines">Линиями</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="main">
+            <div class="main__left">
+              <div class="menu">
+                <ul class="menu-list">
+                  <li class="menu-list-item active"><a href="#" class="menu-list-item-link"><span class="menu-list-item-link-span">iPhone</span></a>
+                    <ul class="menu-list-child">
+                      <li class="menu-list-item"><a href="#" class="menu-list-item-link"><span class="menu-list-item-link-span">iPhone 4s</span></a></li>
+                      <li class="menu-list-item"><a href="#" class="menu-list-item-link"><span class="menu-list-item-link-span">iPhone 5</span></a></li>
+                      <li class="menu-list-item"><a href="#" class="menu-list-item-link"><span class="menu-list-item-link-span">iPhone 5s с эксклюзивным дизайном</span></a></li>
+                      <li class="menu-list-item"><a href="#" class="menu-list-item-link"><span class="menu-list-item-link-span">iPhone 6</span></a></li>
+                      <li class="menu-list-item"><a href="#" class="menu-list-item-link"><span class="menu-list-item-link-span">iPhone 6 Plus</span></a></li>
+                    </ul>
+                  </li>
+                  <li class="menu-list-item"><a href="#" class="menu-list-item-link"><span class="menu-list-item-link-span">iPad</span></a></li>
+                  <li class="menu-list-item"><a href="#" class="menu-list-item-link"><span class="menu-list-item-link-span">iMac</span></a></li>
+                  <li class="menu-list-item"><a href="#" class="menu-list-item-link"><span class="menu-list-item-link-span">Macbook</span></a></li>
+                  <li class="menu-list-item"><a href="#" class="menu-list-item-link"><span class="menu-list-item-link-span">iPod</span></a></li>
+                  <li class="menu-list-item"><a href="#" class="menu-list-item-link"><span class="menu-list-item-link-span">Другое</span></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="main__content">
+              <div class="products">
+                <ul class="products__list grid">
+                  <li class="products__list-item">
+                    <div class="product-img-wrap"><img src="img/imac-lines.jpg" alt="Apple Thunderbolt Display 27&quot;" class="product-img"></div>
+                    <div class="product-desc-wrap">
+                      <div class="product-desc-name"><a href="#" class="product-name-link">Apple Thunderbolt Display 27"</a></div>
+                      <div class="product-desc-text">
+                        <ul class="product-spec-list">
+                          <li class="product-spec-list-item"><span class="spec-label">Артикул</span><span class="spec-value">42787825</span></li>
+                          <li class="product-spec-list-item"><span class="spec-label">Опция</span><span class="spec-value">включена</span></li>
+                          <li class="product-spec-list-item"><span class="spec-label">Цвет</span><span class="spec-value">серебристый</span></li>
+                          <li class="product-spec-list-item"><span class="spec-label">Размер</span><span class="spec-value">1280*1245*90</span></li>
+                          <li class="product-spec-list-item"><span class="spec-label">Вес</span><span class="spec-value">9 кг</span></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="products__list-item">
+                    <div class="product-img-wrap"><img src="img/imac-27-lines.jpg" alt="Apple iMac 27&quot;" class="product-img"></div>
+                    <div class="product-desc-wrap">
+                      <div class="product-desc-name"><a href="#" class="product-name-link">Apple iMac 27"</a></div>
+                      <div class="product-desc-text">
+                        <ul class="product-spec-list">
+                          <li class="product-spec-list-item"><span class="spec-label">Артикул</span><span class="spec-value">42787825</span></li>
+                          <li class="product-spec-list-item"><span class="spec-label">Опция</span><span class="spec-value">включена</span></li>
+                          <li class="product-spec-list-item"><span class="spec-label">Цвет</span><span class="spec-value">серебристый</span></li>
+                          <li class="product-spec-list-item"><span class="spec-label">Размер</span><span class="spec-value">1280*1245*90</span></li>
+                          <li class="product-spec-list-item"><span class="spec-label">Вес</span><span class="spec-value">9 кг</span></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="products__list-item">
+                    <div class="product-img-wrap"><img src="img/iphone-5s-lines.jpg" alt="Phone 5s Gold" class="product-img"></div>
+                    <div class="product-desc-wrap">
+                      <div class="product-desc-name"><a href="#" class="product-name-link">Phone 5s Gold</a></div>
+                      <div class="product-desc-text">
+                        <ul class="product-spec-list">
+                          <li class="product-spec-list-item"><span class="spec-label">Артикул</span><span class="spec-value">42787825</span></li>
+                          <li class="product-spec-list-item"><span class="spec-label">Опция</span><span class="spec-value">включена</span></li>
+                          <li class="product-spec-list-item"><span class="spec-label">Цвет</span><span class="spec-value">серебристый</span></li>
+                          <li class="product-spec-list-item"><span class="spec-label">Размер</span><span class="spec-value">1280*1245*90</span></li>
+                          <li class="product-spec-list-item"><span class="spec-label">Вес</span><span class="spec-value">9 кг</span></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="products__list-item">
+                    <div class="product-img-wrap"><img src="img/ipad-lines.jpg" alt="iPad Air Wi-Fi + Cellular 128GB - Silver" class="product-img"></div>
+                    <div class="product-desc-wrap">
+                      <div class="product-desc-name"><a href="#" class="product-name-link">iPad Air Wi-Fi + Cellular 128GB - Silver</a></div>
+                      <div class="product-desc-text">
+                        <ul class="product-spec-list">
+                          <li class="product-spec-list-item"><span class="spec-label">Артикул</span><span class="spec-value">42787825</span></li>
+                          <li class="product-spec-list-item"><span class="spec-label">Опция</span><span class="spec-value">включена</span></li>
+                          <li class="product-spec-list-item"><span class="spec-label">Цвет</span><span class="spec-value">серебристый</span></li>
+                          <li class="product-spec-list-item"><span class="spec-label">Размер</span><span class="spec-value">1280*1245*90</span></li>
+                          <li class="product-spec-list-item"><span class="spec-label">Вес</span><span class="spec-value">9 кг</span></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="products__list-item">
+                    <div class="product-img-wrap"><img src="img/ipod-lines.jpg" alt="Apple iPod nano 7G 16 ГБ Blue" class="product-img"></div>
+                    <div class="product-desc-wrap">
+                      <div class="product-desc-name"><a href="#" class="product-name-link">Apple iPod nano 7G 16 ГБ Blue</a></div>
+                      <div class="product-desc-text">
+                        <ul class="product-spec-list">
+                          <li class="product-spec-list-item"><span class="spec-label">Артикул</span><span class="spec-value">42787825</span></li>
+                          <li class="product-spec-list-item"><span class="spec-label">Опция</span><span class="spec-value">включена</span></li>
+                          <li class="product-spec-list-item"><span class="spec-label">Цвет</span><span class="spec-value">серебристый</span></li>
+                          <li class="product-spec-list-item"><span class="spec-label">Размер</span><span class="spec-value">1280*1245*90</span></li>
+                          <li class="product-spec-list-item"><span class="spec-label">Вес</span><span class="spec-value">9 кг</span></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="products__list-item">
+                    <div class="product-img-wrap"><img src="img/apple-tv-lines.jpg" alt="Роутер Wi-Fi Apple AirPort Extreme Base Station" class="product-img"></div>
+                    <div class="product-desc-wrap">
+                      <div class="product-desc-name"><a href="#" class="product-name-link">Роутер Wi-Fi Apple AirPort Extreme Base Station</a></div>
+                      <div class="product-desc-text">
+                        <ul class="product-spec-list">
+                          <li class="product-spec-list-item"><span class="spec-label">Артикул</span><span class="spec-value">42787825</span></li>
+                          <li class="product-spec-list-item"><span class="spec-label">Опция</span><span class="spec-value">включена</span></li>
+                          <li class="product-spec-list-item"><span class="spec-label">Цвет</span><span class="spec-value">серебристый</span></li>
+                          <li class="product-spec-list-item"><span class="spec-label">Размер</span><span class="spec-value">1280*1245*90</span></li>
+                          <li class="product-spec-list-item"><span class="spec-label">Вес</span><span class="spec-value">9 кг</span></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="short-about">
+                <h4>Пара слов о магазине</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea doloribus itaque minima consequuntur dignissimos, quia commodi rem eveniet nesciunt, atque pariatur quos dolorum sequi. Cum sequi iste ullam alias, explicabo. Lorem ipsum dolor
+                  sit amet, consectetur adipisicing elit. Ea doloribus itaque minima consequuntur dignissimos, quia commodi rem eveniet nesciunt, atque pariatur quos dolorum sequi. Cum sequi iste ullam alias, explicabo. Lorem ipsum dolor sit amet, consectetur
+                  adipisicing elit. Ea doloribus itaque minima consequuntur dignissimos, quia commodi rem eveniet nesciunt, atque pariatur quos dolorum sequi. Cum sequi iste ullam alias, explicabo.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea doloribus itaque minima consequuntur dignissimos, quia commodi rem eveniet nesciunt, atque pariatur quos dolorum sequi. Cum sequi iste ullam alias, explicabo. Lorem ipsum dolor
+                  sit amet, consectetur adipisicing elit. Ea doloribus itaque minima consequuntur dignissimos, quia commodi rem eveniet nesciunt, atque pariatur quos dolorum sequi. Cum sequi iste ullam alias, explicabo. Lorem ipsum dolor sit amet, consectetur
+                  adipisicing elit. Ea doloribus itaque minima consequuntur dignissimos, quia commodi rem eveniet nesciunt, atque pariatur quos dolorum sequi. Cum sequi iste ullam alias, explicabo. </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
     <footer class="footer">
-      <div class="footer__inner"></div>
+      <div class="footer__inner">
+        <div class="footer__logo">
+          <a href="#" title="ЭпплShop" class="footer__logo-link"><img src="img/logo-bottom.png" alt="ЭпплShop" class="footer__logo-link-img"></a>
+        </div>
+        <div class="footer__menu">
+          <div class="footer__menu-head">О магазине</div>
+          <ul class="footer__menu-list">
+            <li class="footer__menu-list-item"><a href="#" class="footer__menu-list-item-link">О нас</a></li>
+            <li class="footer__menu-list-item"><a href="#" class="footer__menu-list-item-link">Наши цены</a></li>
+            <li class="footer__menu-list-item"><a href="#" class="footer__menu-list-item-link">Наши скидки</a></li>
+            <li class="footer__menu-list-item"><a href="#" class="footer__menu-list-item-link">Акции</a></li>
+          </ul>
+        </div>
+        <div class="footer__menu">
+          <div class="footer__menu-head">Каталог</div>
+          <ul class="footer__menu-list">
+            <li class="footer__menu-list-item"><a href="#" class="footer__menu-list-item-link">Смартфоны</a></li>
+            <li class="footer__menu-list-item"><a href="#" class="footer__menu-list-item-link">Планшеты</a></li>
+            <li class="footer__menu-list-item"><a href="#" class="footer__menu-list-item-link">Компьютеры</a></li>
+            <li class="footer__menu-list-item"><a href="#" class="footer__menu-list-item-link">Аксессуары</a></li>
+          </ul>
+        </div>
+        <div class="footer__menu">
+          <div class="footer__menu-head">Контакты</div>
+          <ul class="footer__menu-list">
+            <li class="footer__menu-list-item"><a href="#" class="footer__menu-list-item-link">Телефоны</a></li>
+            <li class="footer__menu-list-item"><a href="#" class="footer__menu-list-item-link">Адреса</a></li>
+            <li class="footer__menu-list-item"><a href="#" class="footer__menu-list-item-link">Карта проезда</a></li>
+            <li class="footer__menu-list-item"><a href="#" class="footer__menu-list-item-link">Обратная связь</a></li>
+          </ul>
+        </div>
+        <div class="footer__socials">
+          <div class="footer__socials-row">
+            <a href="#" title="скачать приложение на AppStore" class="footer__socials-appstore"><img src="img/app-store.png" alt="скачать приложение на AppStore" class="footer__socials-appstore-img"></a>
+            <a href="#" title="скачать приложение на PlayMarket" class="footer__socials-googleplay"><img src="img/google-play.png" alt="скачать приложение на PlayMarket" class="footer__socials-googleplay-img"></a>
+          </div>
+          <div class="footer__socials-row icos">
+            <a href="#" title="мы в ВКонтакте" class="footer__socials-vk"><img src="img/vk-ico.png" alt="мы в ВКонтакте" class="footer__socials-vk-img"></a>
+            <a href="#" title="мы на FaceBook" class="footer__socials-fb"><img src="img/fb-ico.png" alt="мы на FaceBook" class="footer__socials-fb-img"></a>
+            <a href="#" title="Читать нас на Twitter" class="footer__socials-tw"><img src="img/tw-ico.png" alt="Читать нас на Twitter" class="footer__socials-tw-img"></a>
+          </div>
+        </div>
+      </div>
     </footer>
-    <!-- bower:js-->
-    <script src="bower/jquery/dist/jquery.js"></script>
-    <!-- endbower-->
+    <!-- build:js js/vendor.js -->
+    <!-- bower:js -->
+    <script src="/bower/jquery/dist/jquery.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:js js/main.js -->
+    <script src="js/jquery.formstyler.js"></script>
     <script src="js/main.js"></script>
-  </body>
+    <!-- endbuild --><a href="#" class="go-top">Наверх</a></body>
+
 </html>

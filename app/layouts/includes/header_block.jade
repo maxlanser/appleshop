@@ -1,17 +1,17 @@
 header.header
 	div.header__inner
-		a.logo(href="#")
-			img(src="img/logo.png").logo-img
+		a.logo(href="#", title="Интернет магазин ЭпплShop")
+			img(src="img/logo.png", alt="Интернет магазин ЭпплShop").logo-img
 			span.logo-txt Интернет магазин ЭпплShop
 		div.contactinfo
 			div.contactinfo__phone
 				sup.contactinfo__phone-subcode +7&nbsp;(921)&nbsp;
 				| 322&nbsp;12&nbsp;32
 			div.contactinfo__email
-				a(href="mailto:").contactinfo__email-address manager@company.com
+				a(href="mailto:", title="напишите нам на E-mail").contactinfo__email-address manager@company.com
 		nav.navigation
 			ul.navigation__list
-				each item in [ "Мобильные телефоны", "Планшеты", "Mp3 плееры", "Персональные компьютеры", "Ноутбуки", "Apple TV", "Аксессуары" ]
+				each item, i in [ "Мобильные телефоны", "Планшеты", "Mp3 плееры", "Персональные компьютеры", "Ноутбуки", "Apple TV", "Аксессуары" ]
 					if item == "Персональные компьютеры"
 						li(class="navigation__list-item active")
 							a(href="#").navigation__list-item-link
@@ -19,4 +19,4 @@ header.header
 					else
 						li(class="navigation__list-item")
 							a(href="#").navigation__list-item-link
-								span.navigation__list-item-link-span= item		
+								span.navigation__list-item-link-span= item
