@@ -21,5 +21,5 @@ $ gulp connect
 ```
 Чтоб запустить локальный сервер для скомпилированной сборки
 ```sh
-$ gulp connetc-dist
+$ gulp connect-dist
 ```

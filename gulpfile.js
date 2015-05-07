@@ -23,7 +23,7 @@ var
   uglify        = require('gulp-uglify'),
   
   // минифицирует CSS
-  minifyCss     = require('gulp-minify-css'),
+  uglifycss     = require('gulp-uglifycss'),
 
   // открытие окна браузера
 	opn           = require("opn"),
@@ -66,6 +66,7 @@ gulp.task('useref', function () {
     return gulp.src('app/*.html')
         .pipe(assets)
         .pipe(gulpif('*.js', uglify()))
+        .pipe(gulpif('*.css', uglifycss()))
         .pipe(assets.restore())
         .pipe(useref())
         .pipe(gulp.dest('dist'));
