@@ -62,6 +62,7 @@ h4 {
 .wrapper {
   background: #fff url(../img/wrapper-bg-line.gif) repeat-x top;
   min-height: 100%;
+  min-width: 1000px;
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
           box-sizing: border-box;
@@ -288,7 +289,8 @@ h4 {
 
 .main__content {
   float: right;
-  width: 740px; }
+  width: 740px;
+  overflow: hidden; }
 
 .products {
   margin: 0 0 20px 0; }
@@ -374,7 +376,8 @@ h4 {
 .footer {
   height: 237px;
   margin-top: -237px;
-  background: url(../img/footer-bg.gif); }
+  background: url(../img/footer-bg.gif);
+  min-width: 1000px; }
 
 .footer__inner {
   width: 1000px;
